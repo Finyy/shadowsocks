@@ -25,6 +25,7 @@ import os
 import time
 import socket
 import select
+from gevent import socket
 import errno
 import logging
 from collections import defaultdict

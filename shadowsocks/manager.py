@@ -21,6 +21,7 @@ from __future__ import absolute_import, division, print_function, \
 import errno
 import traceback
 import socket
+from gevent import socket
 import logging
 import json
 import collections

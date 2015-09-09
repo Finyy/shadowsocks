@@ -20,6 +20,7 @@ from __future__ import absolute_import, division, print_function, \
 
 import os
 import socket
+from gevent import socket
 import struct
 import re
 import logging
