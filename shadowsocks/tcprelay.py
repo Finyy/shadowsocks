@@ -140,9 +140,9 @@ class TCPRelayHandler(object):
     def _get_a_server(self):
         server = self._config['server']
         server_port = self._config['server_port']
-        if type(server_port) == list:
+        if isinstance(server_port, list):
             server_port = random.choice(server_port)
-        if type(server) == list:
+        if isinstance(server, list):
             server = random.choice(server)
         logging.debug('chosen server: %s:%d', server, server_port)
         return server, server_port
